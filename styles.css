@@ -1,9 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --blue: #2A324B;
     --gray: #58699D;
     --offwhite: #E1E5EE;
     --white: #fff;
+}
+
+body {
+    font-family: "Montserrat", "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--offwhite);
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 85%;
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--offwhite);
+    margin: 0;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 0.3rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+button.active {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+main {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1rem;
+}
+
+main ul li a {
+    color: var(--gray);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        
+        margin: auto;
+    }
+
+    #categories {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        
+        
+    }
+
+    main {
+        margin: 0;
+        padding: 5rem 4rem;
+        height: 400px;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
 }
