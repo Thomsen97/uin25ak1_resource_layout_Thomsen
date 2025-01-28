@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 :root {
     --blue: #2A324B;
     --gray: #58699D;
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: "Montserrat", "Roboto", serif;
+    font-family: "Montserrat", serif;
     margin: 0;
     padding: 0;
     background-color: var(--offwhite);
@@ -37,6 +39,8 @@ header {
     padding: 1rem 0;
     gap: 0.3rem;
     box-sizing: border-box;
+    min-width: 243px;
+
 }
 
 button {
@@ -49,6 +53,8 @@ button {
     text-align: center;
     cursor: pointer;
     min-width: fit-content;
+    
+    
 }
 
 button.active {
@@ -61,10 +67,12 @@ button:hover {
     color: var(--blue);
 }
 
+
 main {
     width: 100%;
+    min-width: fit-content;
     padding: 1.5rem;
-    margin-top: 1rem;
+    
     background-color: var(--white);
     box-sizing: border-box;
 }
@@ -87,7 +95,7 @@ a:hover {
     color: var(--blue);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1041px) {
 
     .container {
         
@@ -104,7 +112,7 @@ a:hover {
 
     button {
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         font-size: 1.2rem;
         
         
@@ -128,3 +136,4 @@ a:hover {
         }
     }
 }
+
