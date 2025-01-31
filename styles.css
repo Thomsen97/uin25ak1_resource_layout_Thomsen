@@ -8,39 +8,31 @@
     --white: #fff;
 }
 
-body {
-    font-family: "Montserrat", serif;
+html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "Montserrat", serif;
     background-color: var(--offwhite);
-    color: var(--blue);
+    font-size: 16px;
+    height: 100vh;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
     
 }
 
-.container {
-    width: 85%;
-}
 
 
-header {
-    width: 100%;
-    background-color: var(--offwhite);
-    margin: 0;
-}
 
 #categories {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 0.3rem;
-    box-sizing: border-box;
-    min-width: 243px;
-
+    justify-content: center;
+    font-family: inherit;
 }
 
 button {
@@ -53,6 +45,7 @@ button {
     text-align: center;
     cursor: pointer;
     min-width: fit-content;
+    font-family: inherit;
     
     
 }
@@ -69,12 +62,9 @@ button:hover {
 
 
 main {
-    width: 100%;
-    min-width: fit-content;
-    padding: 1.5rem;
-    
-    background-color: var(--white);
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main h2 {
@@ -97,8 +87,14 @@ a:hover {
 
 @media (min-width: 1041px) {
 
+    #content {
+        padding: 4rem 5rem;
+        min-width: 1450px;
+
+    }
+
     .container {
-        
+        background-color: var(--white);
         margin: auto;
     }
 
@@ -108,6 +104,7 @@ a:hover {
         justify-content: space-evenly;
         padding: 0;
         gap: 1rem;
+        background-color: var(--offwhite);
     }
 
     button {
@@ -117,11 +114,14 @@ a:hover {
         
         
     }
+    
 
     main {
         margin: 0;
         padding: 5rem 4rem;
         height: 400px;
+        background-color: var(--offwhite);
+        width: 100%;
 
         h2 {
             font-size: 2rem;
